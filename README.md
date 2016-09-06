@@ -6,3 +6,5 @@ To set this up:
 1.  Make sure your Arduino Yun is connected to WiFi or Ethernet with access to the internet. 
 2.  Change the `BACKEND_URL` at the top to whatever server your PHP lives on
 3.  `process.addParameter("val="+String(_value));` change val to be whatever name your PHP file looks for
+
+NOTE: The sketch currently has the `-k` flag to allow insecure requests. It is recommended that you use HTTPS if possible. See https://letsencrypt.org
