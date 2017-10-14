@@ -35,7 +35,7 @@ void doCurl(int _value) {
   process.addParameter("-X"); // use POST instead of default GET
   process.addParameter("POST");
   process.addParameter("-H"); // Any headers go after -H
-  process.addParameter("Content-Type:application/x-www-form-encoded");
+  process.addParameter("Content-Type: application/x-www-form-urlencoded");
 
   /* Add data */
   process.addParameter("-d");
